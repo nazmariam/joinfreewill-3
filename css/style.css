@@ -128,6 +128,45 @@
     background: #fff;
     color: #70009f;
 }
+.icons-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.hair-icon{
+    list-style: none;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.hair-analysis.box{
+    flex-direction: column;
+    padding: 30px;
+}
+/*.box.last{*/
+/*    border: none;*/
+/*}*/
+.hair-analysis .box-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+.hair-analysis .box-img{
+    max-width: 56px;
+    max-height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px 15px 0;
+}
+.hair-analysis .box-title{
+    margin: 0;
+}
 #chart {
     max-width: 650px;
     margin: 35px auto;
