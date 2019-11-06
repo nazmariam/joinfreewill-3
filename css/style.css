@@ -63,6 +63,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 .ingredients{
     padding: 24px 0 0;
@@ -76,12 +77,15 @@
     font-weight: 600;
 }
 .description h2{
-    margin: 20px 0 30px;
+    margin: 13px 0 30px;
     font-size: 36px;
+    letter-spacing: 0.6px;
 }
 .ingredients-description{
     font-size: 24px;
     line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .custom-formula{
     background: #fff;
@@ -91,6 +95,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 1.5;
+    margin-top: 20px;
 }
 .box-wrapper{
     display: flex;
@@ -100,14 +105,14 @@
     border-bottom: 1px solid #2e3192;
     display: flex;
     flex-direction: row;
-    padding: 30px 0;
+    padding: 40px 0;
 }
 .box-content{
-    padding: 0 30px;
 }
 .box-img{
     width: 128px;
     height: 128px;
+    margin: 0 32px;
 }
 .box-title{
     font-size: 16px;
@@ -116,6 +121,13 @@
 .box-text{
     font-size: 14px;
     line-height: 1.5;
+}
+.btn-tab-block {
+    margin-top: 66px;
+}
+.btn-tab-block button {
+    display: inline-block;
+    padding: 12px 50px;
 }
 .btn-ingr-block{
     text-align: center;
@@ -143,13 +155,16 @@
     align-items: center;
     margin: 15px;
 }
+.hair-icon img{
+    width: 100%;
+}
 .hair-analysis.box{
     flex-direction: column;
-    padding: 30px;
+    padding: 32px 6px;
 }
-/*.box.last{*/
-/*    border: none;*/
-/*}*/
+.hair-analysis .box-title{
+    font-size: 14px;
+}
 .hair-analysis .box-content{
     display: flex;
     flex-direction: row;
@@ -162,17 +177,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 25px 15px 0;
+    margin: 0 15px 0 0;
 }
 .hair-analysis .box-title{
     margin: 0;
+}
+.hair-analysis .box-text{
+    font-size: 12px;
+    margin-left: 8px;
 }
 #chart {
     max-width: 650px;
     margin: 35px auto;
 }
 @media only screen and (min-width: 750px){
-
+    .section-header {
+        margin: 27px 0;
+    }
     .medium-up--push-one-fifth {
         left: auto;
     }
@@ -186,6 +207,36 @@
         padding-left: 0;
         width: 100%;
         margin-left: auto;
+    }
+}
+@media only screen and (max-width: 749px){
+    .description h2{
+        font-size: 3rem;
+    }
+    .section-header{
+        margin: 0;
+    }
+    .ingredients-description {
+        font-size: 18px;
+    }
+    .custom-formula {
+        text-align: center;
+        font-size: 18px;
+        margin: 24px 0 0;
+    }
+    .box{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-img{
+        margin: 16px 32px;
+    }
+    .box-title{
+        text-align: center;
+    }
+    .box-text{
+        text-align: center;
     }
 }
 @media(max-width: 660px) {
