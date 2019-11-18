@@ -505,7 +505,28 @@
                 colors: ['#000'],
             },
         },
-        labels: ["Volume", "Dandruff", "Scalp", "Damage", "Dryness"]
+        labels: ["Volume", "Dandruff", "Scalp", "Damage", "Dryness"],
+        responsive: [
+            {
+                breakpoint:  500,
+                options: {
+                    plotOptions: {
+                        bar: {
+                            horizontal: false
+                        }
+                    },
+                    chart: {
+                        height: 270,
+                        width: 280,
+                    },
+                    dataLabels:{
+                        style: {
+                            fontSize: '10px',
+                        },
+                    },
+                }
+            }
+        ]
     };
 
     let chart = new ApexCharts(
