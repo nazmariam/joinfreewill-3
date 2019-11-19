@@ -190,6 +190,91 @@
     max-width: 650px;
     margin: 35px auto;
 }
+.accordionItem{
+    float:left;
+    display:block;
+    width:100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+}
+.accordionItemHeading{
+    font-size: 18px;
+    font-weight: 600;
+    cursor:pointer;
+    margin:0;
+    padding:10px;
+    border-bottom: 1px solid rgb(240, 244, 247);
+    background-color: rgb(255, 161, 161);
+    color:#fff;
+    width:100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordionItemHeading:hover{
+    color: rgb(255, 161, 161);
+    background-color: rgb(255, 255, 255);
+}
+.accordionItemHeading:hover > svg{
+    fill:  rgb(255, 161, 161);
+}
+.close .accordionItemContent{
+    height:0;
+    transition:height .35s linear;
+    -webkit-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    float:left;
+    display:block;
+}
+.open .accordionItemContent{
+    padding: 20px;
+    width: 100%;
+    display:block;
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: top;
+    -o-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    transition: transform 0.35s linear;
+    box-sizing: border-box;
+}
+.accordionItemContent:hover{
+    background-color: #fff;
+}
+.open .accordionItemHeading{
+    margin:0;
+
+    color: rgb(255, 161, 161);
+    background-color: rgb(255, 255, 255);
+}
+.open .accordionItemHeading > svg{
+    fill:  rgb(255, 161, 161);
+}
+svg{
+    width: 20px;
+    height: 20px;
+    fill: rgb(255, 255, 255);
+    float: right;
+}
+.minus{
+    display: none;
+}
+.open .minus{
+    display: block;
+}
+.open .plus{
+    display: none;
+}
+
 @media only screen and (min-width: 750px){
     .section-header {
         margin: 27px 0;
