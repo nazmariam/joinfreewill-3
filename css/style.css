@@ -401,6 +401,10 @@ label {
 .video-box {
     width: 560px;
 }
+.slider-wrapper {
+    margin: 30px auto;
+    width: 100%;
+}
 @media only screen and (min-width: 750px){
     .section-header {
         margin: 27px 0;
