@@ -58,6 +58,9 @@
     top: 6px;
 }
 /*------------------Page template------------------*/
+.content-for-layout {
+    background-color: #fff;
+}
 .grid{
     display: flex;
     flex-direction: column;
@@ -498,6 +501,29 @@ label {
     margin: 30px auto;
     width: 100%;
 }
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.slick-dots li{
+    list-style: none;
+}
+.slick-dots li button{
+    color: transparent;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    border: solid 1px #3d2277;
+    display: block;
+    padding: 0;
+    margin: 0 3px;
+}
+.slick-dots li.slick-active button{
+    background-color: #3d2277;
+}
+
 .bottom-accordion__wrapper {
     display: flex;
     flex-direction: row;
