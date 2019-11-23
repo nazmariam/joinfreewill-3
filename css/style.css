@@ -563,6 +563,26 @@ label {
 .bottom-img {
     width: 100%;
 }
+.mobile-visible{
+    display: none!important;
+}
+.mobile-hidden {
+    display: block !important;
+}
+@media only screen and (max-width: 768px) {
+    .pricing-plan-content {
+        padding-right: 30px;
+    }
+    .mobile-hidden {
+        display: none !important;
+    }
+    .mobile-visible{
+        display: block !important;
+    }
+    .pricing-plan-image {
+        margin-bottom: 30px;
+    }
+}
 @media only screen and (min-width: 750px){
     .section-header {
         margin: 27px 0;
