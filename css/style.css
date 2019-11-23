@@ -126,6 +126,9 @@
     font-size: 14px;
     line-height: 1.5;
 }
+.pricing-plan-content{
+    font-size: 14px;
+}
 .btn-tab-block {
     margin-top: 66px;
 }
@@ -311,9 +314,12 @@ svg{
     font-size: 14px;
     text-decoration: underline;
 }
+.good-to-know .special {
+    font-size: 20px;
+}
 .special {
     color: #2e3192;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
 }
 .select-plan {
@@ -350,7 +356,7 @@ label {
     margin: 16px 0;
 }
 .price-page .btn-ingredients {
-    padding: 12px 76px;
+    padding: 12px 94px;
 }
 .price-page .icons {
     width: 100%;
@@ -364,12 +370,12 @@ label {
 .price-page span {
     margin-top: 16px;
 }
-.award-header {
+h5.award-header {
     font-size: 28px;
     color: #2e3192;
     text-align: center;
     width: 100%;
-    margin: 90px 0;
+    margin: 90px auto 20px;
 }
 .award-wrapper {
     position: relative;
@@ -537,6 +543,7 @@ label {
     min-width: 50%;
     display: flex;
     align-items: center;
+    font-weight: 600;
 }
 .bottom-accordion {
     min-height: 250px;
@@ -545,12 +552,13 @@ label {
 }
 .bottom-accordion .accordionItem {
     border-bottom: none;
-    font-size: 12px;
+    font-size: 18px;
+    font-weight: normal;
 }
 .bottom-accordion .accordionItemHeading {
-    font-size: 14px;
+    font-size: 18px;
     color: #2e3192;
-    font-weight: normal;
+    font-weight: 600;
     padding: 10px 10px 5px 10px;
 }
 .bottom-accordion .accordionWrapper {
@@ -581,6 +589,37 @@ label {
     }
     .pricing-plan-image {
         margin-bottom: 30px;
+    }
+    .price-page .btn-ingr-block {
+        max-width: 100%;
+    }
+    .select-plan {
+        text-align: center;
+    }
+    .price-plan__description {
+        text-align: center;
+        padding: 0 20px;
+    }
+    .price-plan__description ul {
+        margin-top: 0;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    .price-page h5.award-header {
+        margin: 20px auto 110px;
+    }
+    .video-title {
+        margin: 0 auto;
+    }
+    .slider-wrapper h5.award-header {
+        margin: 20px auto;
+    }
+    .bottom-part h5.award-header {
+        margin: 20px auto;
+        max-width: 80%;
+    }
+    .bottom-accordion .accordionWrapper {
+        padding: 15px;
     }
 }
 @media only screen and (min-width: 750px){
@@ -623,14 +662,14 @@ label {
     }
     .price-page .video-wrapper {
         flex-direction: column;
-        background-color: #d8edf7;
+        background: linear-gradient(to bottom, transparent 0%, transparent 35%, transparent 35%, #d8edf7 35%, #d8edf7 100%);
         padding: 30px 15px;
     }
     .price-page .video-content {
         width: 100%;
     }
     .video-wrapper iframe {
-        max-width: 300px;
+        max-width: 290px;
     }
     .video-box {
         width: 100%;
@@ -650,11 +689,13 @@ label {
         padding: 30px;
     }
     .price-page h5 {
-        max-width: 90%;
+        margin: 0 auto 20px;
     }
     .award-wrapper {
         width: 300px;
         height: 630px;
+        margin-top: 70px;
+        margin-bottom: -120px;
     }
     .el2 {
         top: 10%;
